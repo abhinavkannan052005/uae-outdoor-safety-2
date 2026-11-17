@@ -1,0 +1,80 @@
+[
+  {
+    "id": "seed-sharjah-majaz",
+    "emirateId": "sharjah",
+    "emirateName": "Sharjah",
+    "category": "dust_haze",
+    "locationNote": "Al Majaz Waterfront",
+    "description": "Suspended fine dust haze reducing visibility along the lagoon promenade.",
+    "latitude": 25.3249,
+    "longitude": 55.3886,
+    "confirmations": 4,
+    "createdAt": "2026-11-17T12:37:32.411Z",
+    "expiresAt": "2026-11-18T12:37:32.411Z"
+  },
+  {
+    "id": "seed-dubai-kite",
+    "emirateId": "dubai",
+    "emirateName": "Dubai",
+    "category": "high_heat",
+    "locationNote": "Kite Beach Running Track",
+    "description": "Strong afternoon surface glare and warm asphalt near the central boardwalk.",
+    "latitude": 25.1583,
+    "longitude": 55.2072,
+    "confirmations": 6,
+    "createdAt": "2026-11-17T12:23:32.411Z",
+    "expiresAt": "2026-11-18T12:23:32.411Z"
+  },
+  {
+    "id": "seed-abudhabi-yas",
+    "emirateId": "abu-dhabi",
+    "emirateName": "Abu Dhabi",
+    "category": "stray_animals",
+    "locationNote": "Yas Bay Pier Walk",
+    "description": "Several free-roaming cats gathered near shaded waterfront seating.",
+    "latitude": 24.4655,
+    "longitude": 54.6022,
+    "confirmations": 2,
+    "createdAt": "2026-11-17T12:08:32.411Z",
+    "expiresAt": "2026-11-18T12:08:32.411Z"
+  },
+  {
+    "id": "seed-sharjah-qasba",
+    "emirateId": "sharjah",
+    "emirateName": "Sharjah",
+    "category": "flooded_paths",
+    "locationNote": "Al Qasba Canal Walkway",
+    "description": "Standing landscape irrigation water pooling near the pedestrian footbridge.",
+    "latitude": 25.3222,
+    "longitude": 55.3765,
+    "confirmations": 5,
+    "createdAt": "2026-11-17T11:51:32.411Z",
+    "expiresAt": "2026-11-18T11:51:32.411Z"
+  },
+  {
+    "id": "seed-dubai-creek",
+    "emirateId": "dubai",
+    "emirateName": "Dubai",
+    "category": "dust_haze",
+    "locationNote": "Dubai Creek Harbour Promenade",
+    "description": "Light windblown sand drifting across the north viewing walkway.",
+    "latitude": 25.2054,
+    "longitude": 55.3442,
+    "confirmations": 3,
+    "createdAt": "2026-11-17T12:31:32.411Z",
+    "expiresAt": "2026-11-18T12:31:32.411Z"
+  },
+  {
+    "id": "seed-abudhabi-corniche",
+    "emirateId": "abu-dhabi",
+    "emirateName": "Abu Dhabi",
+    "category": "high_heat",
+    "locationNote": "Corniche East Plaza",
+    "description": "Limited midday tree cover along the cycling and pedestrian lane; bring water.",
+    "latitude": 24.4764,
+    "longitude": 54.3401,
+    "confirmations": 3,
+    "createdAt": "2026-11-17T12:16:32.411Z",
+    "expiresAt": "2026-11-18T12:16:32.411Z"
+  }
+]

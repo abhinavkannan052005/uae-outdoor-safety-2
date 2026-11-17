@@ -1,0 +1,253 @@
+import type { EmirateConfig, EmirateId, WalkingSpot } from '../types/weather';
+
+export const EMIRATES: EmirateConfig[] = [
+  {
+    id: 'abu-dhabi',
+    name: 'Abu Dhabi',
+    shortName: 'Abu Dhabi',
+    latitude: 24.4539,
+    longitude: 54.3773,
+    coastalNote: 'Arabian Gulf Coast',
+  },
+  {
+    id: 'dubai',
+    name: 'Dubai',
+    shortName: 'Dubai',
+    latitude: 25.2048,
+    longitude: 55.2708,
+    coastalNote: 'Arabian Gulf Coast',
+  },
+  {
+    id: 'sharjah',
+    name: 'Sharjah',
+    shortName: 'Sharjah',
+    latitude: 25.3463,
+    longitude: 55.4209,
+    coastalNote: 'Gulf & Lagoon Corridor',
+  },
+  {
+    id: 'ajman',
+    name: 'Ajman',
+    shortName: 'Ajman',
+    latitude: 25.4052,
+    longitude: 55.5136,
+    coastalNote: 'Northern Gulf Coast',
+  },
+  {
+    id: 'umm-al-quwain',
+    name: 'Umm Al Quwain',
+    shortName: 'UAQ',
+    latitude: 25.5647,
+    longitude: 55.5552,
+    coastalNote: 'Khor Al Beidah Coast',
+  },
+  {
+    id: 'ras-al-khaimah',
+    name: 'Ras Al Khaimah',
+    shortName: 'RAK',
+    latitude: 25.7895,
+    longitude: 55.9432,
+    coastalNote: 'Northern Coast & Foothills',
+  },
+  {
+    id: 'fujairah',
+    name: 'Fujairah',
+    shortName: 'Fujairah',
+    latitude: 25.1288,
+    longitude: 56.3265,
+    coastalNote: 'Gulf of Oman Coast',
+  },
+];
+
+export const EMIRATE_MAP: Record<EmirateId, EmirateConfig> = EMIRATES.reduce(
+  (acc, item) => {
+    acc[item.id] = item;
+    return acc;
+  },
+  {} as Record<EmirateId, EmirateConfig>
+);
+
+export const RECOMMENDED_WALKING_SPOTS: Record<EmirateId, WalkingSpot[]> = {
+  'abu-dhabi': [
+    {
+      id: 'ad-corniche',
+      nameEn: 'Corniche Shaded Promenade',
+      nameAr: 'ممشى كورنيش أبوظبي المظلل',
+      areaEn: 'Abu Dhabi Corniche',
+      areaAr: 'كورنيش أبوظبي',
+      shadeLevel: 'high_shade',
+    },
+    {
+      id: 'ad-yas-bay',
+      nameEn: 'Yas Bay Waterfront',
+      nameAr: 'واجهة ياس باي البحرية',
+      areaEn: 'Yas Island',
+      areaAr: 'جزيرة ياس',
+      shadeLevel: 'waterfront_breeze',
+    },
+    {
+      id: 'ad-hudayriyat',
+      nameEn: 'Hudayriyat Walk & Cycle Track',
+      nameAr: 'مسار المشي في الحديريات',
+      areaEn: 'Al Hudayriyat Island',
+      areaAr: 'جزيرة الحديريات',
+      shadeLevel: 'open_track',
+    },
+  ],
+  dubai: [
+    {
+      id: 'dxb-mushrif',
+      nameEn: 'Mushrif Park Woodland Trail',
+      nameAr: 'مسار مشرف المشجر',
+      areaEn: 'Al Khawaneej',
+      areaAr: 'الخوانيج',
+      shadeLevel: 'high_shade',
+    },
+    {
+      id: 'dxb-kite-beach',
+      nameEn: 'Kite Beach Running Track',
+      nameAr: 'مضمار كايت بيتش',
+      areaEn: 'Umm Suqeim',
+      areaAr: 'أم سقيم',
+      shadeLevel: 'waterfront_breeze',
+    },
+    {
+      id: 'dxb-creek',
+      nameEn: 'Dubai Creek Harbour Walk',
+      nameAr: 'ممشى مرسى خور دبي',
+      areaEn: 'Creek Harbour',
+      areaAr: 'خور دبي',
+      shadeLevel: 'open_track',
+    },
+  ],
+  sharjah: [
+    {
+      id: 'shj-qasba',
+      nameEn: 'Al Qasba Canal Walkway',
+      nameAr: 'ممشى قناة القصباء',
+      areaEn: 'Al Khan',
+      areaAr: 'الخان',
+      shadeLevel: 'high_shade',
+    },
+    {
+      id: 'shj-majaz',
+      nameEn: 'Al Majaz Waterfront',
+      nameAr: 'واجهة المجاز المائية',
+      areaEn: 'Khalid Lagoon',
+      areaAr: 'بحيرة خالد',
+      shadeLevel: 'waterfront_breeze',
+    },
+    {
+      id: 'shj-aljada',
+      nameEn: 'Aljada Boulevard Track',
+      nameAr: 'مسار بوليفارد الجادة',
+      areaEn: 'Muwaileh',
+      areaAr: 'مويلح',
+      shadeLevel: 'open_track',
+    },
+  ],
+  ajman: [
+    {
+      id: 'ajm-zorah',
+      nameEn: 'Al Zorah Mangrove Boardwalk',
+      nameAr: 'ممشى قرم الزوراء',
+      areaEn: 'Al Zorah',
+      areaAr: 'الزوراء',
+      shadeLevel: 'high_shade',
+    },
+    {
+      id: 'ajm-corniche',
+      nameEn: 'Ajman Corniche Promenade',
+      nameAr: 'ممشى كورنيش عجمان',
+      areaEn: 'Al Nakhil',
+      areaAr: 'النخيل',
+      shadeLevel: 'waterfront_breeze',
+    },
+    {
+      id: 'ajm-flag-park',
+      nameEn: 'Al Jurf Flag Park Loop',
+      nameAr: 'مسار حديقة العلم بالجرف',
+      areaEn: 'Al Jurf',
+      areaAr: 'الجرف',
+      shadeLevel: 'open_track',
+    },
+  ],
+  'umm-al-quwain': [
+    {
+      id: 'uaq-khor',
+      nameEn: 'Khor Al Yeefrah Mangrove Path',
+      nameAr: 'مسار قرم خور اليفرة',
+      areaEn: 'Al Khor Coast',
+      areaAr: 'ساحل الخور',
+      shadeLevel: 'high_shade',
+    },
+    {
+      id: 'uaq-corniche',
+      nameEn: 'UAQ Corniche Beachfront',
+      nameAr: 'كورنيش أم القيوين البحري',
+      areaEn: 'Al Raas',
+      areaAr: 'الرأس',
+      shadeLevel: 'waterfront_breeze',
+    },
+    {
+      id: 'uaq-zayed-park',
+      nameEn: 'Sheikh Zayed Park Track',
+      nameAr: 'ممشى حديقة الشيخ زايد',
+      areaEn: 'Al Salamah',
+      areaAr: 'السلامة',
+      shadeLevel: 'open_track',
+    },
+  ],
+  'ras-al-khaimah': [
+    {
+      id: 'rak-saqr-park',
+      nameEn: 'Saqr Park Shaded Loop',
+      nameAr: 'مسار حديقة صقر المظلل',
+      areaEn: 'Khuzam',
+      areaAr: 'خزام',
+      shadeLevel: 'high_shade',
+    },
+    {
+      id: 'rak-qawasim',
+      nameEn: 'Al Qawasim Corniche',
+      nameAr: 'كورنيش القواسم',
+      areaEn: 'Dafan Al Khor',
+      areaAr: 'دفن الخور',
+      shadeLevel: 'waterfront_breeze',
+    },
+    {
+      id: 'rak-marjan',
+      nameEn: 'Al Marjan Island Promenade',
+      nameAr: 'ممشى جزيرة المرجان',
+      areaEn: 'Al Marjan Island',
+      areaAr: 'جزيرة المرجان',
+      shadeLevel: 'open_track',
+    },
+  ],
+  fujairah: [
+    {
+      id: 'fuj-madhab',
+      nameEn: 'Madhab Spring Park Walk',
+      nameAr: 'ممشى حديقة عين مضب',
+      areaEn: 'Al Madhab',
+      areaAr: 'مضب',
+      shadeLevel: 'high_shade',
+    },
+    {
+      id: 'fuj-corniche',
+      nameEn: 'Fujairah Corniche Walk',
+      nameAr: 'ممشى كورنيش الفجيرة',
+      areaEn: 'Al Faseel',
+      areaAr: 'الفصيل',
+      shadeLevel: 'waterfront_breeze',
+    },
+    {
+      id: 'fuj-umbrella',
+      nameEn: 'Umbrella Beach Coastal Path',
+      nameAr: 'مسار شاطئ المظلات',
+      areaEn: 'Al Faseel Coast',
+      areaAr: 'ساحل الفصيل',
+      shadeLevel: 'open_track',
+    },
+  ],
+};
